@@ -29,7 +29,11 @@ class NewVisitorTest(unittest.TestCase):
     def test_home_page(self):
         """
 
-        Put your description of the purpose of your web site here.
+        Nomadism leads toward the exchange and transformation of theological
+        disciplinary and methodological borders. In seeking a balance between
+        self-sustenance and self-edification, nomadic tribes transform their
+        space-time relationship with the surrounding country into an ongoing
+        search for meaning and a sense of home. 
 
         """
 
