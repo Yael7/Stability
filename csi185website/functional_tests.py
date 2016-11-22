@@ -59,7 +59,21 @@ class NewVisitorTest(unittest.TestCase):
         self.assertIn('sun',self.browser.title)
 
         h=self.browser.find_element_by_tag_name('h1')
+
         m=self.browser.find_element_by_tag_name('img')
+
+        # the user goes back to the home page
+        # self.browser.back()
+        self.browser.get('http://localhost:8000/index.html')
+
+        # the user sees at the bottom of the page a link to credits
+        l=self.browser.find_element_by_link_text('Credits')
+
+        # the user clicks on the credits link
+        l.click()
+        # and sees the credits.html page
+        a=self.browser.current_url
+        self.assertIn("credits.html",a)
 
 if __name__=="__main__":
         unittest.main(warnings="ignore")
